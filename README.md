@@ -231,7 +231,7 @@ class FuturisticAIChatbot:
         self.settings_menu.add_checkbutton(label="Enable Speech", variable=tk.BooleanVar(value=self.config['speech_enabled']), 
                                           command=self.toggle_speech)
         self.settings_menu.add_checkbutton(label="Allow Interruptions", variable=tk.BooleanVar(value=self.config['interrupt_enabled']), 
-                                          command=self.toggle_interrupt)
+                                          command=self.toggle_interrupt) 
         self.menu_bar.add_cascade(label="Settings", menu=self.settings_menu)
         
         self.root.config(menu=self.menu_bar)
